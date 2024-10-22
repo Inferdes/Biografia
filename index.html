@@ -17,6 +17,28 @@
             text-align: center;
             padding: 1rem;
         }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
         main {
             padding: 20px;
             max-width: 800px;
@@ -44,6 +66,11 @@
             width: 100%;
             bottom: 0;
         }
+        @media (max-width: 600px) {
+            nav ul li {
+                float: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -52,26 +79,35 @@
         <h1>Biografia de Jean</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#quem-sou-eu">Quem Sou Eu</a></li>
+            <li><a href="#minha-carreira">Minha Carreira</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section>
-            <h2>Quem sou eu</h2>
+        <section id="quem-sou-eu">
+            <h2>Quem Sou Eu</h2>
             <img src="https://via.placeholder.com/200" alt="Foto de Jean">
             <p>Olá, meu nome é Jean. Sou professor de Pensamento Computacional e Matemática II, atuo no ensino fundamental e médio em uma escola de tempo integral. Além de professor, também sou músico e missionário na igreja.</p>
         </section>
 
-        <section>
+        <section id="minha-carreira">
             <h2>Minha Carreira</h2>
             <p>Tenho uma paixão por educação e tecnologia, o que me levou a desenvolver habilidades na área de programação e ensino de computação. Atualmente, leciono aulas de Pensamento Computacional no ensino fundamental e no 1º ano do ensino médio, além de Matemática II (programação) para os alunos do 2º e 3º ano do ensino médio.</p>
             <p>Também desenvolvo projetos educacionais inovadores, como um jogo sobre o setor agrícola de cana-de-açúcar para o concurso Agrinho, e estou participando de uma jornada formativa sobre escolas em tempo integral.</p>
         </section>
 
-        <section>
+        <section id="projetos">
             <h2>Projetos</h2>
             <p>Entre os projetos que desenvolvi, destaca-se a criação de um jogo educativo sobre o setor agrícola de cana-de-açúcar, onde o personagem principal é uma capivara chamada Chery. O objetivo do jogo é mostrar o processo de cultivo e industrialização dos produtos agrícolas do norte do Paraná.</p>
             <p>Estou sempre buscando novas maneiras de integrar a tecnologia no ensino, e também tenho planos de montar uma rádio escolar para engajar mais os alunos.</p>
         </section>
 
-        <section>
+        <section id="contato">
             <h2>Contato</h2>
             <p>Se quiser saber mais sobre meus projetos ou entrar em contato, você pode me encontrar no e-mail: <strong>jean@exemplo.com</strong>.</p>
         </section>
